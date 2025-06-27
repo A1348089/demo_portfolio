@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+section {
+    height: 100vh;
+}
+/* Header start */
+nav {
+    background-color:#001f3f;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #7FDBFF;
+}
+
+.mobile-toggle {
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.mobile-menue {
+    position: relative;
+    top: 50px;
+    background-color: #001f3f;
+    display: none;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+.mobile-menue a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    margin: 10px;
+}
+.mobile-menue a:hover {
+    color: #7FDBFF;
+}
+/* Header Ends */
+
+/* Home start */
+.home {
+    background: url('/media/background_img.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+.home h1 {
+    font-size: 48px;
+}
+.home h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #7FDBFF;
+}
+.home p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.home .buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home .buttons a {
+    padding: 12px 24px;
+    background-color: #7FDBFF;
+    color: #001f3f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.home .buttons a:hover {
+    background-color: #30cccc;
+}
+/* Home ends */
+
+/* About start */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    gap: 40px;
+}
+.about-img {
+    flex: 1 1 200px;
+    align-items: center;
+}
+
+.about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #001f3f;
+    overflow: hidden;
+    object-fit: cover;
+}
+.about-content {
+    flex: 2 1 500px;
+   
+}
+.about-content h2 {
+    color: #001f3f;
+}
+.about-content p {
+    line-height: 1.6;
+}
+.education h3, .skills h3 {
+    color: #003366;
+    border-left: 5px solid #7FDBFF;
+    padding-left: 10px;
+}
+.education ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+.skills .skill {
+    margin-bottom: 18px;
+}
+.skills .skill-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #001f3f;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+.progress-fill {
+    height: 100%;
+    background-color: #7FDBFF;
+    border-radius: 10px;
+}
+/* About end */
+
+/* project start */
+.projects {
+    background: #f4f7fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+.projects h2 {
+    color: #001f3f;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+}
+.project-card h3 {
+    color: #001f3f;
+}
+.project-card p {
+    color: #555;
+    font-size: 14px;
+}
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+}
+.project-links a {
+    padding: 6px 12px;
+    border: 2px solid #7FDBFF;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #001f3f;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.project-links a:hover {
+    background-color: #7FDBFF;
+}
+/* project end */
+
+/* Contact Start */
+.contact {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+.contact h2 {
+    color: #001f3f;
+    margin-bottom: 16px;
+}
+.contact p {
+    color: #555;
+    margin-bottom: 24px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #001f3f;
+    gap: 8px;
+    font-size: 16px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto 24px auto;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #7FDBFF;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: none;
+}
+.contact-form button {
+    background: #7FDBFF;
+    color: #001f3f;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition:  background 0.3s;
+}
+.contact-form button:hover {
+    background: #39cccc;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.social-links a {
+    font-size: 24px;
+    color: #001f3f;
+    transition:  color 0.3s;
+}
+.social-links a:hover {
+    color: #7FDBFF;
+}
+/* Contact End */
+/* Responsive code */
+/* header start */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-toggle {
+        display: block;
+    }
+    .mobile-menue.show {
+        display: flex;
+    }
+}
+/* Header Ends */
+
+/* Home start */
+@media (max-width: 600px) {
+    .home h1 {
+        font-size: 36px;
+    }
+    .home h2 {
+        font-size: 22px;
+    }
+    .home p {
+        font-size: 16px;
+    }
+    .home .buttons a {
+        padding: 10px 20px;
+    }
+}
+/* Home end */
